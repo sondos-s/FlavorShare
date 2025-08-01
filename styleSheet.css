@@ -1,0 +1,17 @@
+.w3-quarter img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.recipe-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.recipe-link:hover {
+  color: #ff8c42; 
+  text-decoration: underline;
+  cursor: pointer;
+}
