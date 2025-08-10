@@ -1,17 +1,75 @@
-.w3-quarter img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
+/* --- متغيرات الألوان --- */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Karma", sans-serif;
 }
+
+.w3-bar-block .w3-bar-item {
+  padding: 20px;
+}
+
+:root {
+  --main-bg: #ffffff;
+  --accent-color: #A8D5BA; /* نعناعي فاتح */
+  --accent-hover: #85bfa1; /* درجة أغمق */
+  --text-color: #333333;
+  --heading-color: #4A4A4A;
+  --link-color: #4A7C59;
+}
+
+/* --- الجسم --- */
+body {
+  background-color: var(--main-bg) !important;
+  color: var(--text-color) !important;
+  font-family: "Karma", sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- ترويسة الموقع --- */
+.w3-top {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+/* --- روابط الوصفات (العناوين) --- */
 .recipe-link {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s;
+  text-decoration: none !important;
+  color: var(--heading-color) !important;
+  transition: color 0.3s !important;
 }
 
 .recipe-link:hover {
-  color: #ff8c42; 
-  text-decoration: underline;
-  cursor: pointer;
+  color: var(--accent-hover) !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+/* --- الصور داخل الأقسام --- */
+.w3-quarter img {
+  width: 250px !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+  transition: transform 0.3s !important;
+}
+
+.w3-quarter img:hover {
+  transform: scale(1.05) !important;
+}
+
+/* --- عناوين الأقسام --- */
+h3 {
+  color: var(--heading-color) !important;
+}
+
+/* --- روابط الشريط الجانبي --- */
+.w3-sidebar a {
+  color: var(--text-color) !important;
+  transition: background-color 0.3s !important;
+}
+
+.w3-sidebar a:hover {
+  background-color: var(--accent-color) !important;
+  color: white !important;
 }
